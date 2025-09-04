@@ -53,8 +53,9 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 export function NavigationBar() {
-  const backgroundColor = "bg-red-400";
+  const backgroundColor = "bg-cyan-700";
   const textColor = "text-gray-100";
+  const hoverColor = "hover:bg-slate-200";
 
   return (
     <nav
@@ -66,19 +67,19 @@ export function NavigationBar() {
           <Link href='/'>
             <NavigationMenuItem>
               <div
-                className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} hover:bg-red-200 cursor-pointer`}
+                className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}
               >
                 <House size={24} />
-                <span className='hidden md:inline-block ml-2'>Hem</span>
+                <span className='hidden md:inline-block ml-2'>Home</span>
               </div>
             </NavigationMenuItem>
           </Link>
           <NavigationMenuItem>
             <NavigationMenuTrigger
-              className={`${backgroundColor} ${textColor} hover:bg-red-200 cursor-pointer`}
+              className={`${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}
             >
               <ShoppingCart size={24} />
-              <span className='hidden md:inline-block ml-2'>Produkter</span>
+              <span className='hidden md:inline-block ml-2'>Products</span>
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className='grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]'>
@@ -97,10 +98,10 @@ export function NavigationBar() {
           <Link href='/about'>
             <NavigationMenuItem>
               <div
-                className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} hover:bg-red-200 cursor-pointer`}
+                className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}
               >
                 <Store size={24} />
-                <span className='hidden md:inline-block ml-2'>Om oss</span>
+                <span className='hidden md:inline-block ml-2'>About us</span>
               </div>
             </NavigationMenuItem>
           </Link>
