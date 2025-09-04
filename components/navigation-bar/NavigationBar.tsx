@@ -58,10 +58,7 @@ export function NavigationBar() {
   const hoverColor = "hover:bg-slate-200";
 
   return (
-    <nav
-      className={`${backgroundColor} h-10 content-center mx-auto pt-0.5`}
-      style={{ height: "44px" }}
-    >
+    <nav className={`${backgroundColor} content-center mx-auto h-10`}>
       <NavigationMenu viewport={false} className='mx-auto'>
         <NavigationMenuList>
           <Link href='/'>
