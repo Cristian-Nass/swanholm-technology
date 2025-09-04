@@ -2,8 +2,9 @@
 
 import webpush, { PushSubscription } from "web-push";
 
+// The VAPID subject must be a valid URL or a "mailto:" URL (without angle brackets)
 webpush.setVapidDetails(
-  "<mailto:your-email@example.com>",
+  "mailto:cristian.nass@hotmail.com",
   process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!,
   process.env.VAPID_PRIVATE_KEY!
 );
