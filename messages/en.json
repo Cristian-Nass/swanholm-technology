@@ -1,8 +1,11 @@
 {
   "navbar": {
     "home": "Home",
+    "products": "Products",
     "about": "About",
-    "contact": "Contact"
+    "news": "News",
+    "contact": "Contact",
+    "settings": "Settings"
   },
   "home": {
     "title": "Welcome to Swanholm Technology",

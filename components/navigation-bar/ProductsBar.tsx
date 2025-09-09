@@ -5,16 +5,26 @@ import {
   NavigationMenuLink,
   NavigationMenuTrigger,
 } from '../ui/navigation-menu';
+import {useTranslations} from 'next-intl';
+import Image from 'next/image';
 
 const backgroundColor = 'bg-cyan-700';
 const textColor = 'text-gray-100';
 const hoverColor = 'hover:bg-slate-200';
 const ProductsBar = () => {
+  const t = useTranslations('navbar');
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger
         className={`${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
-        <span className="hidden md:inline-block ml-2">Products</span>
+        <Image
+          src="/assets/svgs/vest.svg"
+          alt="Products"
+          width={24}
+          height={24}
+          className="text-white"
+        />
+        <span className="hidden md:inline-block ml-2">{t('products')}</span>
       </NavigationMenuTrigger>
       <NavigationMenuContent>
         <ul className="grid w-[300px] gap-4">

@@ -38,7 +38,9 @@ export function NavigationBar() {
               <div
                 className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
                 <Store size={24} />
-                <span className="hidden md:inline-block ml-2">About us</span>
+                <span className="hidden md:inline-block ml-2">
+                  {t('about')}
+                </span>
               </div>
             </NavigationMenuItem>
           </Link>
@@ -47,7 +49,7 @@ export function NavigationBar() {
               <div
                 className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
                 <Store size={24} />
-                <span className="hidden md:inline-block ml-2">News</span>
+                <span className="hidden md:inline-block ml-2">{t('news')}</span>
               </div>
             </NavigationMenuItem>
           </Link>
@@ -56,7 +58,9 @@ export function NavigationBar() {
               <div
                 className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
                 <Store size={24} />
-                <span className="hidden md:inline-block ml-2">Contact</span>
+                <span className="hidden md:inline-block ml-2">
+                  {t('contact')}
+                </span>
               </div>
             </NavigationMenuItem>
           </Link>
