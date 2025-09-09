@@ -6,7 +6,7 @@ import {
   NavigationMenuTrigger,
 } from '../ui/navigation-menu';
 import {useTranslations} from 'next-intl';
-import Image from 'next/image';
+import {Shirt} from 'lucide-react';
 
 const backgroundColor = 'bg-cyan-700';
 const textColor = 'text-gray-100';
@@ -17,13 +17,7 @@ const ProductsBar = () => {
     <NavigationMenuItem>
       <NavigationMenuTrigger
         className={`${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
-        <Image
-          src="/assets/svgs/vest.svg"
-          alt="Products"
-          width={24}
-          height={24}
-          className="text-white"
-        />
+        <Shirt size={24} />
         <span className="hidden md:inline-block ml-2">{t('products')}</span>
       </NavigationMenuTrigger>
       <NavigationMenuContent>

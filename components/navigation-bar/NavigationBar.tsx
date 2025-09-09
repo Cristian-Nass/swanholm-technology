@@ -10,9 +10,10 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import LanguageToggle from '../LanguageToggle';
-import {House, Store} from 'lucide-react';
+import {House, Store, Phone, Newspaper} from 'lucide-react';
 import SettingBar from './SettingBar';
 import ProductsBar from './ProductsBar';
+
 export function NavigationBar() {
   const t = useTranslations('navbar');
   const backgroundColor = 'bg-cyan-700';
@@ -48,7 +49,7 @@ export function NavigationBar() {
             <NavigationMenuItem>
               <div
                 className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
-                <Store size={24} />
+                <Newspaper size={24} />
                 <span className="hidden md:inline-block ml-2">{t('news')}</span>
               </div>
             </NavigationMenuItem>
@@ -57,7 +58,7 @@ export function NavigationBar() {
             <NavigationMenuItem>
               <div
                 className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
-                <Store size={24} />
+                <Phone size={24} />
                 <span className="hidden md:inline-block ml-2">
                   {t('contact')}
                 </span>
