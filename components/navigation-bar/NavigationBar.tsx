@@ -12,6 +12,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
+import LanguageToggle from '../LanguageToggle';
 import {House, ShoppingCart, Store} from 'lucide-react';
 import SettingBar from './SettingBar';
 const components: {title: string; href: string; description: string}[] = [
@@ -153,6 +154,7 @@ export function NavigationBar() {
           <SettingBar />
         </NavigationMenuList>
       </NavigationMenu>
+      <LanguageToggle />
     </nav>
   );
 }
