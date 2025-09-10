@@ -75,7 +75,7 @@ export function NavigationForMobile() {
         </DropdownMenuGroup>
 
         <DropdownMenuItem>
-          {t("logout")}
+          Logout
           <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
         </DropdownMenuItem>
       </DropdownMenuContent>
