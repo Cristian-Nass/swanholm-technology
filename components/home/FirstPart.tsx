@@ -1,5 +1,6 @@
 import VestTDImage from '../VestTDImage';
 import {useTranslations} from 'next-intl';
+
 const FirstPart = () => {
   const t = useTranslations('home');
   return (
