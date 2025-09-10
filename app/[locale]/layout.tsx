@@ -3,7 +3,7 @@ import {routing} from '@/i18n/routing';
 import {notFound} from 'next/navigation';
 import type {Metadata} from 'next';
 import {Geist, Geist_Mono} from 'next/font/google';
-import {NavigationBar} from '@/components/navigation-bar/NavigationBar';
+import NavigationBarToggle from '@/components/navigation-bar/NavigationBarToggle';
 import '../globals.css';
 
 const geistSans = Geist({
@@ -37,7 +37,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider>
-          <NavigationBar />
+          <NavigationBarToggle />
           {children}
         </NextIntlClientProvider>
       </body>
