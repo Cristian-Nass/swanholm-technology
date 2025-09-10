@@ -1,6 +1,7 @@
 import {useTranslations} from 'next-intl';
 import VestTDImage from '@/components/VestTDImage';
 import Footer from '@/components/Footer';
+import SecondPart from '@/components/home/SecondPart';
 export default function Home() {
   const t = useTranslations('home');
   return (
@@ -18,6 +19,7 @@ export default function Home() {
               <p>{t('description2')}</p>
             </div>
           </div>
+          <SecondPart />
         </main>
         <Footer />
       </div>
