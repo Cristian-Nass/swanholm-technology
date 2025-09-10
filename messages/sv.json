@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "home": "Hem",
+    "products": "Produkter",
+    "news": "Nyheter",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "settings": "Inställningar"
+  },
+  "home": {
+    "title": "Välkommen till Swanholm Technology",
+    "subtitle": "Var med och hjälp till att göra världen säkrare.",
+    "description": "Genom att använda Swanholm Alert Vest kan du vara säker på att få hjälp när du behöver det.",
+    "description2": "Håll dig och dina medarbetare säkra med hjälp av smart teknologi."
+  }
+}
