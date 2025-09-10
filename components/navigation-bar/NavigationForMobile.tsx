@@ -15,6 +15,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {useTranslations} from "next-intl";
+import LanguageToggle from "../LanguageToggle";
 export function NavigationForMobile() {
   const t = useTranslations("navbar");
   return (
@@ -78,6 +79,7 @@ export function NavigationForMobile() {
           Logout
           <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
         </DropdownMenuItem>
+        <LanguageToggle />
       </DropdownMenuContent>
     </DropdownMenu>
   );
