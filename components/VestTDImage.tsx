@@ -4,7 +4,6 @@ import {useMediaQuery} from '@/hooks/use-media-query';
 
 const VestTDImage = () => {
   const isDesktop = useMediaQuery('(min-width: 1024px)');
-  console.log(isDesktop);
   return (
     <div>
       <Image
