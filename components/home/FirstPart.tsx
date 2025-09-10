@@ -9,10 +9,12 @@ const FirstPart = () => {
         <VestTDImage />
       </div>
       <div className="flex flex-col gap-[16px]">
-        <h1 className="text-4xl font-bold">{t('title')}</h1>
-        <h3 className="text-2xl font-bold">{t('subtitle')}</h3>
-        <p>{t('description')}</p>
-        <p>{t('description2')}</p>
+        <h1 className="sm:text-5xl text-3xl font-bold">{t('title')}</h1>
+        <h3 className="sm:text-3xl text-xl font-bold text-cyan-700">
+          {t('subtitle')}
+        </h3>
+        <p className="sm:text-lg text-base">{t('description')}</p>
+        <p className="sm:text-lg text-base">{t('description2')}</p>
       </div>
     </div>
   );
