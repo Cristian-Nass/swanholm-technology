@@ -1,24 +1,25 @@
-import {NextIntlClientProvider, hasLocale} from 'next-intl';
-import {routing} from '@/i18n/routing';
-import {notFound} from 'next/navigation';
-import type {Metadata} from 'next';
-import {Geist, Geist_Mono} from 'next/font/google';
-import NavigationBarToggle from '@/components/navigation-bar/NavigationBarToggle';
-import '../globals.css';
+import {NextIntlClientProvider, hasLocale} from "next-intl";
+import {routing} from "@/i18n/routing";
+import {notFound} from "next/navigation";
+import type {Metadata} from "next";
+import {Geist, Geist_Mono} from "next/font/google";
+import NavigationBarToggle from "@/components/navigation-bar/NavigationBarToggle";
+import Footer from "@/components/Footer";
+import "../globals.css";
 
 const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: 'Swanholm Technology',
-  description: 'Swanholm Technology',
+  title: "Swanholm Technology",
+  description: "Swanholm Technology",
 };
 
 export default async function RootLayout({
@@ -32,13 +33,18 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex min-h-screen flex-col`}>
         <NextIntlClientProvider>
           <NavigationBarToggle />
-          {children}
+
+          {/* Main content grows and pushes footer down */}
+          <main className="flex-1">{children}</main>
+
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

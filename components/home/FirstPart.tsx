@@ -4,7 +4,7 @@ import {useTranslations} from "next-intl";
 const FirstPart = () => {
   const t = useTranslations("home");
   return (
-    <div className="flex flex-col lg:flex-row gap-[16px] h-full items-center w-full justify-evenly">
+    <aside className="flex flex-col lg:flex-row gap-[16px] h-full items-center w-full justify-evenly">
       <div>
         <VestTDImage />
       </div>
@@ -16,7 +16,7 @@ const FirstPart = () => {
         <p className="sm:text-lg text-base">{t("description")}</p>
         <p className="sm:text-lg text-base">{t("description2")}</p>
       </div>
-    </div>
+    </aside>
   );
 };
 
