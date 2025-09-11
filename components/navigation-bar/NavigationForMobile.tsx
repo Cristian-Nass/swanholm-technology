@@ -1,5 +1,6 @@
 import {Button} from "@/components/ui/button";
 import {House, Menu, Store, Newspaper, Phone, LogOut} from "lucide-react";
+import {Link} from "@/i18n/navigation";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -33,17 +34,21 @@ export function NavigationForMobile() {
           <LanguageToggle />
         </DropdownMenuLabel>
         <DropdownMenuGroup>
-          <DropdownMenuItem>
-            {t("home")}
-            <DropdownMenuShortcut>
-              <House size={16} />
-            </DropdownMenuShortcut>
+          <DropdownMenuItem asChild>
+            <Link href="/">
+              {t("home")}
+              <DropdownMenuShortcut>
+                <House size={16} />
+              </DropdownMenuShortcut>
+            </Link>
           </DropdownMenuItem>
-          <DropdownMenuItem>
-            {t("about")}
-            <DropdownMenuShortcut>
-              <Store size={16} />
-            </DropdownMenuShortcut>
+          <DropdownMenuItem asChild>
+            <Link href="/about">
+              {t("about")}
+              <DropdownMenuShortcut>
+                <Store size={16} />
+              </DropdownMenuShortcut>
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
             {t("news")}
