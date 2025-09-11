@@ -1,24 +1,24 @@
-'use client';
+"use client";
 
-import * as React from 'react';
-import Link from 'next/link';
-import {useTranslations} from 'next-intl';
+import * as React from "react";
+import Link from "next/link";
+import {useTranslations} from "next-intl";
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuList,
   navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu';
-import LanguageToggle from '../LanguageToggle';
-import {House, Store, Phone, Newspaper} from 'lucide-react';
-import SettingBar from './SettingBar';
-import ProductsBar from './ProductsBar';
+} from "@/components/ui/navigation-menu";
+import LanguageToggle from "../LanguageToggle";
+import {House, Store, Phone, Newspaper} from "lucide-react";
+import SettingBar from "./SettingBar";
+import ProductsBar from "./ProductsBar";
 
 export function NavigationBar() {
-  const t = useTranslations('navbar');
-  const backgroundColor = 'bg-cyan-700';
-  const textColor = 'text-gray-100';
-  const hoverColor = 'hover:bg-slate-200';
+  const t = useTranslations("navbar");
+  const backgroundColor = "bg-cyan-700";
+  const textColor = "text-gray-100";
+  const hoverColor = "hover:bg-slate-200";
 
   return (
     <nav className={`${backgroundColor} content-center mx-auto h-10`}>
@@ -29,7 +29,7 @@ export function NavigationBar() {
               <div
                 className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
                 <House size={24} />
-                <span className="hidden md:inline-block ml-2">{t('home')}</span>
+                <span className="hidden md:inline-block ml-2">{t("home")}</span>
               </div>
             </NavigationMenuItem>
           </Link>
@@ -40,7 +40,7 @@ export function NavigationBar() {
                 className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
                 <Store size={24} />
                 <span className="hidden md:inline-block ml-2">
-                  {t('about')}
+                  {t("about")}
                 </span>
               </div>
             </NavigationMenuItem>
@@ -50,7 +50,7 @@ export function NavigationBar() {
               <div
                 className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
                 <Newspaper size={24} />
-                <span className="hidden md:inline-block ml-2">{t('news')}</span>
+                <span className="hidden md:inline-block ml-2">{t("news")}</span>
               </div>
             </NavigationMenuItem>
           </Link>
@@ -60,7 +60,7 @@ export function NavigationBar() {
                 className={`${navigationMenuTriggerStyle()} ${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
                 <Phone size={24} />
                 <span className="hidden md:inline-block ml-2">
-                  {t('contact')}
+                  {t("contact")}
                 </span>
               </div>
             </NavigationMenuItem>

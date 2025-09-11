@@ -6,7 +6,7 @@ const VestTDImage = () => {
   return (
     <div style={{position: "relative"}}>
       <Image
-        src="/assets/images/3d-vest.png"
+        src="/assets/images/3d-vest.webp"
         alt="VestTD"
         width={400}
         height={400}
