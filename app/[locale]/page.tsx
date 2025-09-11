@@ -6,10 +6,6 @@ export default function Home() {
       <article className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <FirstPart />
         <SecondPart />
-        <SecondPart />
-        <SecondPart />
-        <SecondPart />
-        <SecondPart />
       </article>
     </section>
   );
