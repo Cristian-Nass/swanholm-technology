@@ -1,5 +1,5 @@
 import {Button} from "@/components/ui/button";
-import {Menu} from "lucide-react";
+import {House, Menu, Store, Newspaper, Phone, LogOut} from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -27,24 +27,32 @@ export function NavigationForMobile() {
           <Menu />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56" align="start">
+      <DropdownMenuContent className="w-36 sm:w-48" align="start">
         <DropdownMenuLabel>Menu</DropdownMenuLabel>
         <DropdownMenuGroup>
           <DropdownMenuItem>
             {t("home")}
-            <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+            <DropdownMenuShortcut>
+              <House size={16} />
+            </DropdownMenuShortcut>
           </DropdownMenuItem>
           <DropdownMenuItem>
             {t("about")}
-            <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+            <DropdownMenuShortcut>
+              <Store size={16} />
+            </DropdownMenuShortcut>
           </DropdownMenuItem>
           <DropdownMenuItem>
             {t("news")}
-            <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+            <DropdownMenuShortcut>
+              <Newspaper size={16} />
+            </DropdownMenuShortcut>
           </DropdownMenuItem>
           <DropdownMenuItem>
             {t("contact")}
-            <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+            <DropdownMenuShortcut>
+              <Phone size={16} />
+            </DropdownMenuShortcut>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuGroup>
@@ -77,7 +85,9 @@ export function NavigationForMobile() {
 
         <DropdownMenuItem>
           Logout
-          <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+          <DropdownMenuShortcut>
+            <LogOut size={16} />
+          </DropdownMenuShortcut>
         </DropdownMenuItem>
         <LanguageToggle />
       </DropdownMenuContent>
