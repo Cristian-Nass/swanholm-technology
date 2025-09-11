@@ -13,7 +13,7 @@ const LanguageToggle = () => {
 
   return (
     <div
-      className="cursor-pointer absolute right-2 sm:right-18 top-2"
+      className="cursor-pointer absolute right-2 xs:right-18 top-2"
       onClick={toggleLanguage}>
       <div className="shopping-cart-div text-white">
         <Image
