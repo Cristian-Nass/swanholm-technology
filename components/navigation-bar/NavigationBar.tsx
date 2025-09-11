@@ -21,7 +21,7 @@ export function NavigationBar() {
   const hoverColor = "hover:bg-slate-200";
 
   return (
-    <nav className={`${backgroundColor} content-center mx-auto h-10`}>
+    <nav className={`${backgroundColor} content-center mx-auto h-10 w-full`}>
       <NavigationMenu viewport={false} className="mx-auto">
         <NavigationMenuList>
           <Link href="/">
