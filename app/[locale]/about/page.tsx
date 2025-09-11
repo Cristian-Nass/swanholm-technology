@@ -1,7 +1,7 @@
 import Image from "next/image";
 const AboutPage = () => {
   return (
-    <div className="flex lg:flex-row flex-col gap-[16px] justify-center max-w-[1200px] mx-auto my-[32px] p-[26px] rounded-[16px]">
+    <div className="flex lg:flex-row flex-col gap-[16px] justify-center max-w-[1200px] mx-auto lg:my-[32px] p-[26px] lg:rounded-[16px] bg-linear-to-r/srgb from-cyan-200 to-slate-100">
       <div className="w-[200px] md:w-[300px] lg:w-[500px] flex items-center justify-center mx-auto">
         <Image
           src="/assets/images/vest-d.webp"
