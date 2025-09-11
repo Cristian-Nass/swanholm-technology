@@ -33,13 +33,17 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex min-h-screen flex-col`}>
         <NextIntlClientProvider>
           <NavigationBarToggle />
-          {children}
+
+          {/* Main content grows and pushes footer down */}
+          <main className="flex-1">{children}</main>
+
           <Footer />
         </NextIntlClientProvider>
       </body>
