@@ -28,7 +28,10 @@ export function NavigationForMobile() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-36 sm:w-48" align="start">
-        <DropdownMenuLabel>Menu</DropdownMenuLabel>
+        <DropdownMenuLabel>
+          Menu
+          <LanguageToggle />
+        </DropdownMenuLabel>
         <DropdownMenuGroup>
           <DropdownMenuItem>
             {t("home")}
@@ -89,7 +92,6 @@ export function NavigationForMobile() {
             <LogOut size={16} />
           </DropdownMenuShortcut>
         </DropdownMenuItem>
-        <LanguageToggle />
       </DropdownMenuContent>
     </DropdownMenu>
   );
