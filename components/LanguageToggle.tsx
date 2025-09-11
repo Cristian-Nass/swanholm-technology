@@ -12,10 +12,10 @@ const LanguageToggle = () => {
   };
 
   return (
-    <div
+    <section
       className="cursor-pointer absolute right-2 xs:right-18 top-2"
       onClick={toggleLanguage}>
-      <div className="shopping-cart-div text-white">
+      <article className="shopping-cart-div text-white">
         <Image
           src={
             locale === "en"
@@ -26,8 +26,8 @@ const LanguageToggle = () => {
           width={26}
           height={26}
         />
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 

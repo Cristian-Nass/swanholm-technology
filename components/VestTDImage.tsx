@@ -4,7 +4,7 @@ import {useState} from "react";
 const VestTDImage = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div style={{position: "relative"}}>
+    <article style={{position: "relative"}}>
       <Image
         src="/assets/images/3d-vest.webp"
         alt="VestTD"
@@ -46,7 +46,7 @@ const VestTDImage = () => {
           </div>
         </>
       )}
-    </div>
+    </article>
   );
 };
 
