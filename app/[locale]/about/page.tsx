@@ -10,7 +10,7 @@ const AboutPage = () => {
           height={430}
         />
       </article>
-      <article className="flex flex-col lg:gap-[16px] gap-[8px] px-[16px] lg:pt-14 pt-0">
+      <article className="flex flex-col lg:gap-[16px] gap-[8px] lg:px-[16px] px-0 lg:pt-14 pt-0">
         <p className="text-3xl md:text-2xl lg:text-5xl font-bold text-cyan-900">
           How can we make the profession as a truck driver safer?
         </p>
