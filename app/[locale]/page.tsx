@@ -3,7 +3,7 @@
 import NewStyle from "@/components/home/NewStyle";
 export default function Home() {
   return (
-    <section className="font-sans grid justify-items-center px-4 sm:px-8">
+    <section>
       <article className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         {/* <FirstPart /> */}
         <NewStyle />
