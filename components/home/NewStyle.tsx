@@ -2,32 +2,13 @@ import Image from "next/image";
 const NewStyle = () => {
   return (
     <section className="w-full background-gradient">
-      <div
-        style={{
-          display: "flex",
-          maxWidth: "1280px",
-          width: "100%", // responsive
-          height: "400px",
-          margin: "0 auto",
-          flexWrap: "nowrap", // ensure no wrapping
-        }}
-        className="background-gradient">
-        <div
-          style={{
-            flexGrow: 1, // take all remaining space
-            textAlign: "left",
-            padding: "10px",
-          }}>
+      <div className="flex max-w-[1280px] w-full h-[400px] mx-auto flex-nowrap background-gradient">
+        <div className="flex-grow text-left p-[10px]">
           <p>Text</p>
         </div>
         <div
-          style={{
-            width: "266px", // fixed size
-            flexShrink: 0, // never shrink
-            backgroundImage: "url('/assets/images/01.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}>
+          className="w-[266px] flex-shrink-0 bg-cover bg-center"
+          style={{backgroundImage: "url('/assets/images/01.webp')"}}>
           <Image
             src="/assets/images/01.webp"
             alt="New Style"
