@@ -1,23 +1,25 @@
 import {
   NavigationMenuLink,
   NavigationMenuTrigger,
-} from '@/components/ui/navigation-menu';
-import {CircleIcon, LogIn, Settings, CircleCheckIcon} from 'lucide-react';
-import {NavigationMenuItem} from '@/components/ui/navigation-menu';
-import {NavigationMenuContent} from '@/components/ui/navigation-menu';
-import Link from 'next/link';
-import {useTranslations} from 'next-intl';
+} from "@/components/ui/navigation-menu";
+import {CircleIcon, LogIn, Settings, CircleCheckIcon} from "lucide-react";
+import {NavigationMenuItem} from "@/components/ui/navigation-menu";
+import {NavigationMenuContent} from "@/components/ui/navigation-menu";
+import Link from "next/link";
+import {useTranslations} from "next-intl";
 const SettingBar = () => {
-  const backgroundColor = 'bg-cyan-700';
-  const textColor = 'text-gray-100';
-  const hoverColor = 'hover:bg-slate-200';
-  const t = useTranslations('navbar');
+  const backgroundColor = "bg-cyan-950";
+  const textColor = "text-gray-400";
+  const hoverColor = "hover:bg-cyan-950 hover:text-sky-100";
+  const t = useTranslations("navbar");
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger
         className={`${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
         <Settings size={24} />
-        <span className="hidden md:inline-block ml-2">{t('settings')}</span>
+        <span className="hidden md:inline-block ml-2 font-normal">
+          {t("settings")}
+        </span>
       </NavigationMenuTrigger>
       <NavigationMenuContent>
         <ul className="grid w-[200px] gap-4">

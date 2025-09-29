@@ -8,9 +8,9 @@ import {
 import {useTranslations} from "next-intl";
 import {Shirt} from "lucide-react";
 import useProductsStore from "@/store/useProductsStore";
-const backgroundColor = "bg-cyan-700";
-const textColor = "text-gray-100";
-const hoverColor = "hover:bg-slate-200";
+const backgroundColor = "bg-cyan-950";
+const textColor = "text-gray-400";
+const hoverColor = "hover:bg-cyan-950 hover:text-sky-100";
 const ProductsBar = () => {
   const {products} = useProductsStore();
   const t = useTranslations("navbar");
@@ -19,7 +19,9 @@ const ProductsBar = () => {
       <NavigationMenuTrigger
         className={`${backgroundColor} ${textColor} ${hoverColor} cursor-pointer`}>
         <Shirt size={24} />
-        <span className="hidden md:inline-block ml-2">{t("products")}</span>
+        <span className="hidden md:inline-block ml-2 font-normal">
+          {t("products")}
+        </span>
       </NavigationMenuTrigger>
       <NavigationMenuContent>
         <ul className="grid w-[300px] gap-4">
