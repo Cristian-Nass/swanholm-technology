@@ -13,7 +13,7 @@ const NewStyle = () => {
           // style={{backgroundImage: "url('/assets/images/01.webp')"}}
         >
           <Image
-            src="/assets/images/02.webp"
+            src="/assets/images/01.webp"
             alt="New Style"
             width={332}
             height={332}
