@@ -5,16 +5,24 @@ import {motion, AnimatePresence} from "framer-motion";
 
 const NewStyle = () => {
   const [currentImage, setCurrentImage] = useState(0);
+
   const images = [
     "/assets/images/01.webp",
     "/assets/images/02.webp",
     "/assets/images/03.webp",
   ];
 
+  // 📝 matching texts for each image
+  const texts = [
+    "Be Connected. Be Safe.",
+    "Be Safe. Be Smile.",
+    "Be Smile. Be Living.",
+  ];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 7000); // ✅ stay 4s per image
+    }, 7000); // stays 7s per image
     return () => clearInterval(interval);
   }, []);
 
@@ -23,16 +31,24 @@ const NewStyle = () => {
   const tiles = Array.from({length: gridSize * gridSize}, (_, i) => i);
 
   const containerW = 332;
-  const containerH = 499; // Increased the height from 332 to 400
+  const containerH = 499;
 
   return (
     <section className="w-full background-gradient">
       <div className="flex max-w-[1280px] w-full h-[500px] mx-auto flex-nowrap">
         {/* Left text */}
-        <div className="flex-grow text-left p-[10px]">
-          <p className="text-3xl font-bold text-yellow-200 italic mt-4 font-serif">
-            Be Connected. Be Safe.
-          </p>
+        <div className="flex-grow text-left p-[10px] flex items-center">
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={texts[currentImage]}
+              className="text-3xl font-bold text-yellow-200 italic font-serif"
+              initial={{opacity: 0, y: 10}}
+              animate={{opacity: 1, y: 0}}
+              exit={{opacity: 0, y: -10}}
+              transition={{duration: 0.6}}>
+              {texts[currentImage]}
+            </motion.p>
+          </AnimatePresence>
         </div>
 
         {/* Right rotating image with tile animation */}
