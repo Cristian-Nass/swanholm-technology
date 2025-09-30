@@ -1,5 +1,6 @@
 "use client";
 import {useState} from "react";
+import SecondPartDescription from "./SecondPartDescription";
 const SecondPart = () => {
   const [isHovered, setIsHovered] = useState<string>("");
   console.log(isHovered);
@@ -283,7 +284,8 @@ const SecondPart = () => {
               />
               <g
                 id="shoulder_right"
-                onMouseEnter={() => setIsHovered("shoulder_light")}
+                className="cursor-pointer"
+                onMouseEnter={() => setIsHovered("Shoulder lights")}
                 onMouseLeave={() => setIsHovered("")}>
                 <path
                   id="Vector 34"
@@ -374,7 +376,8 @@ const SecondPart = () => {
               </g>
               <g
                 id="shoulder_left"
-                onMouseEnter={() => setIsHovered("shoulder_light")}
+                className="cursor-pointer"
+                onMouseEnter={() => setIsHovered("Shoulder lights")}
                 onMouseLeave={() => setIsHovered("")}>
                 <path
                   id="Vector 35"
@@ -809,7 +812,9 @@ const SecondPart = () => {
             </defs>
           </svg>
         </div>
-        <div className="flex-1">Here</div>
+        <div className="flex-1">
+          {isHovered !== "" && <SecondPartDescription title={isHovered} />}
+        </div>
       </div>
     </section>
   );
