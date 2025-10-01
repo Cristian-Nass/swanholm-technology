@@ -161,3 +161,29 @@
   cursor: pointer;
   opacity: 0.8;
 }
+#reflex-top:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#reflex-bottom:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#pocket-top-1:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#pocket-top-2:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#l_pocket:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#r_pocket:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
