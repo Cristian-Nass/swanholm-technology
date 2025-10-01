@@ -2,8 +2,8 @@
 const SecondPartDescription = ({title}: {title: string}) => {
   return (
     <div>
-      <h2 className="text-xl font-bold text-white">{title}</h2>
-      <p className="text-lg text-white">
+      <h2 className="text-xl font-bold text-gray-300">{title}</h2>
+      <p className="text-lg text-gray-400">
         The AI-driven lights illuminate the room, casting a warm and inviting
         glow that enhances the ambiance. These intelligent lights adjust their
         brightness and color temperature based on the time of day and the
