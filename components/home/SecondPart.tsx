@@ -6,8 +6,8 @@ const SecondPart = () => {
   console.log(isHovered);
 
   return (
-    <section className="w-full h-[520px] bg-cyan-950">
-      <div className="flex flex-row gap-[16px] max-w-[1200px] w-full mx-auto items-center justify-evenly bg-cyan-950">
+    <section className="w-full h-[520px] bg-color-for-svg-vest">
+      <div className="flex flex-row gap-[16px] max-w-[1200px] w-full mx-auto items-center justify-evenly">
         <div className="flex-1 p-8 h-full max-h-[500px]">
           <svg
             width="100%"

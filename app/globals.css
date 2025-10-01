@@ -187,3 +187,12 @@
   cursor: pointer;
   opacity: 0.8;
 }
+
+.bg-color-for-svg-vest {
+  background: radial-gradient(
+    circle,
+    rgb(9, 34, 45) 2%,
+    rgb(14, 45, 59) 70%,
+    rgb(20, 63, 82) 100%
+  );
+}
