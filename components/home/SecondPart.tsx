@@ -6,12 +6,13 @@ const SecondPart = () => {
   console.log(isHovered);
 
   return (
-    <section className="w-full h-full bg-cyan-950">
+    <section className="w-full h-[520px] bg-cyan-950">
       <div className="flex flex-row gap-[16px] max-w-[1200px] w-full mx-auto items-center justify-evenly bg-cyan-950">
-        <div className="flex-1 p-8">
+        <div className="flex-1 p-8 h-full max-h-[500px]">
           <svg
-            width="458"
-            height="684"
+            width="100%"
+            height="100%"
+            className="max-w-[458px] max-h-[456px]"
             viewBox="0 0 458 684"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
