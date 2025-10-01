@@ -10,6 +10,7 @@ const NewStyle = () => {
     "/assets/images/01.webp",
     "/assets/images/02.webp",
     "/assets/images/03.webp",
+    "/assets/svgs/swan.svg",
   ];
 
   // 📝 matching texts for each image
@@ -17,6 +18,7 @@ const NewStyle = () => {
     "Be Connected. Be Safe.",
     "Be Safe. Be Smile.",
     "Be Smile. Be Living.",
+    "Be Swan...",
   ];
 
   useEffect(() => {
