@@ -277,6 +277,8 @@ const SecondPart = () => {
               </g>
               <path
                 id="neck"
+                onMouseEnter={() => setIsHovered("Electric Collar")}
+                onMouseLeave={() => setIsHovered("")}
                 d="M286.42 30.2171C254.038 5.32461 131.889 17.5657 120.248 56.9928C114.997 78.6879 137.088 80.9235 140.967 91.7956C142.591 96.3477 160.013 121.653 165.981 149.463L179.525 150.494C183.138 124.854 194.852 86.8777 199.31 86.27C243.628 80.2304 308.566 47.2409 286.42 30.2171Z"
                 fill="url(#paint12_linear_2971_3)"
                 stroke="#7B7B7B"
@@ -284,7 +286,6 @@ const SecondPart = () => {
               />
               <g
                 id="shoulder_right"
-                className="cursor-pointer"
                 onMouseEnter={() => setIsHovered("Shoulder lights")}
                 onMouseLeave={() => setIsHovered("")}>
                 <path
@@ -376,7 +377,6 @@ const SecondPart = () => {
               </g>
               <g
                 id="shoulder_left"
-                className="cursor-pointer"
                 onMouseEnter={() => setIsHovered("Shoulder lights")}
                 onMouseLeave={() => setIsHovered("")}>
                 <path
@@ -430,7 +430,10 @@ const SecondPart = () => {
                   />
                 </g>
               </g>
-              <g id="collar_light">
+              <g
+                id="collar_light"
+                onMouseEnter={() => setIsHovered("Alarm Button")}
+                onMouseLeave={() => setIsHovered("")}>
                 <path
                   id="Vector 80"
                   d="M213.825 108.594C207.462 114.321 204.71 124.206 205.296 127.335C206.497 133.76 224.654 129.796 230.714 125.298C236.774 120.799 239.145 111.58 237.588 104.682C237.269 100.695 220.188 102.867 213.825 108.594Z"
